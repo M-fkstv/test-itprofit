@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task</title>
+    <link rel="stylesheet" href="./styles/index.scss" />
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+          doloribus delectus ratione illum in natus nemo reiciendis placeat,
+          iste fuga voluptatem aliquid molestiae voluptate eveniet possimus. Aut
+          veritatis odio minima, voluptate incidunt harum repellendus, suscipit
+          expedita reprehenderit obcaecati officiis, nulla ipsum doloribus
+          tenetur itaque earum quis! Necessitatibus tempore maxime ipsum
+          officiis sequi! Doloremque quaerat blanditiis velit sapiente. Qui
+          repellat ipsam unde asperiores dolor vero, placeat deleniti ex, sint
+          aspernatur porro perspiciatis aliquid! Porro veniam ea praesentium
+          fugit nam explicabo tempore. Eveniet optio quasi ullam officiis
+          adipisci fugiat ad enim rem omnis doloremque reprehenderit,
+          voluptatem, doloribus, alias iure corrupti maxime magni!
+        </p>
+        <span class="modal__close">&times;</span>
+      </div>
+    </div>
+
+    <button id="modal-button" class="button">Open Modal</button>
+
+    <form class="form">
+      <div class="input__wrapper">
+        <input class="name" type="text" name="name" id="name" required />
+        <label for="name" class="label"> Name </label>
+        <span id="name-error" class="error">Enter your Name</span>
+      </div>
+
+      <div class="input__wrapper">
+        <input type="email" name="email" id="email" required />
+        <label for="email" class="label"> Email </label>
+        <span id="email-error" class="error">Enter your Email</span>
+      </div>
+
+      <div class="input__wrapper">
+        <input type="text" name="phone" id="phone" required />
+        <label for="phone" class="label"> Phone </label>
+        <span id="phone-error" class="error">Enter your Phone</span>
+      </div>
+
+      <div>
+        <textarea
+          id="text"
+          class="text"
+          maxlength="300"
+          placeholder="Type Something"
+          required
+        ></textarea>
+        <span id="text-error" class="error">Type Something</span>
+      </div>
+
+      <button type="submit" class="form__button button">Send</button>
+      <span id="result"></span>
+    </form>
+    <p id="status"></p>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
